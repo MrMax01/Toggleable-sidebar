@@ -51,6 +51,8 @@ ul li button:hover {
   color: #d4d4d4;
   cursor: pointer;
 }
+
+/* CENTRA L'ICONA CON LA VOCE DEL MENU */
 #sidebar ul li .mini-box {
   display: flex;
   justify-content: center;
@@ -74,5 +76,18 @@ ul li button:hover {
 
 /* UNDERMENU */
 ul li ul {
-  /* display: none; */
+  height: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+ul li ul.home-show {
+  height: 100px;
+}
+ul li ul li {
+  padding: 8px 8px 8px 40px;
+}
+
+ul li ul li:hover {
+  color: black;
+  background-color: #e9e9e9;
 }
