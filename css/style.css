@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   /* width: 200px; */
-  width: 36px;
+  width: 35px;
   height: 97%;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -18,7 +18,14 @@ body {
 #sidebar.active {
   width: 200px;
 }
+/*LOGO START SIDEBAR MANAGEMENT*/
 #logo-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+#logo-name div:first-child {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -29,7 +36,11 @@ body {
   height: 20px;
   margin: 0.5em;
 }
+#logo-name i {
+  padding-inline: 10px;
+}
 
+/*LIST MANAGEMENT*/
 ul li button {
   display: flex;
   width: 100%;
@@ -78,11 +89,10 @@ ul li button:hover {
 ul li ul {
   height: 0;
   width: 100%;
+  overflow: hidden;
   transition: 0.4s;
 }
-ul li ul.home-show {
-  height: 100px;
-}
+
 ul li ul li {
   padding: 8px 8px 8px 40px;
 }
@@ -90,4 +100,29 @@ ul li ul li {
 ul li ul li:hover {
   color: black;
   background-color: #e9e9e9;
+}
+
+/*animazione tendina home*/
+ul li ul.home-show {
+  height: 100px;
+}
+/*animazione tendina calender*/
+ul li ul.calender-show {
+  height: 100px;
+}
+/*animazione tendina message*/
+ul li ul.message-show {
+  height: 100px;
+}
+/*animazione tendina project*/
+ul li ul.project-show {
+  height: 100px;
+}
+/*animazione tendina progress*/
+ul li ul.progress-show {
+  height: 100px;
+}
+/*animazione tendina goal*/
+ul li ul.goal-show {
+  height: 100px;
 }
