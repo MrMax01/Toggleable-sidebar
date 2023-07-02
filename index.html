@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Toggleable Sidebar</title>
   </head>
@@ -14,13 +15,40 @@
         <h1>Tokem</h1>
       </div>
       <ul>
-        <li>Home</li>
-        <li>Calender</li>
-        <li>Messages</li>
-        <li>Projects</li>
-        <li>Progress</li>
-        <li>Goals</li>
+        <li>
+          <div class="mini-box">
+            <i class="fas fa-home"></i>
+          </div>
+          Home
+        </li>
+        <li>
+          <div class="mini-box">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          Calender
+        </li>
+        <li>
+          <div class="mini-box">
+            <i class="far fa-comment-alt"></i>
+          </div>
+          Messages
+        </li>
+        <li>
+          <div class="mini-box">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          Projects
+        </li>
+        <li>
+          <div class="mini-box"><i class="fas fa-signal"></i></div>
+          Progress
+        </li>
+        <li>
+          <div class="mini-box"><i class="fas fa-bullseye"></i></div>
+          Goals
+        </li>
       </ul>
     </div>
+    <script src="javascripts/toggle.js"></script>
   </body>
 </html>
