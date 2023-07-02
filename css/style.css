@@ -29,10 +29,25 @@ body {
   height: 20px;
   margin: 0.5em;
 }
-#sidebar ul li {
+
+ul li button {
   display: flex;
-  align-items: start;
+  width: 100%;
+  background-color: white;
+  color: #d4d4d4;
   padding: 8px;
+  border: none;
+}
+
+ul li button:hover {
+  color: black;
+  background-color: #e9e9e9;
+}
+#sidebar ul li.primary-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* padding: 8px; */
   color: #d4d4d4;
   cursor: pointer;
 }
@@ -42,17 +57,22 @@ body {
   align-items: center;
 }
 
-#sidebar ul li i {
+#sidebar ul li button i {
   margin-right: 0.5em;
   width: 20px;
   height: 20px;
 }
 
-#sidebar ul li:hover {
+/* #sidebar ul li:hover {
   color: black;
   background-color: #e9e9e9;
-}
+} */
 
 #logo-name:hover {
   background-color: #e9e9e9;
+}
+
+/* UNDERMENU */
+ul li ul {
+  /* display: none; */
 }
